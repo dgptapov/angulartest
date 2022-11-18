@@ -1,0 +1,11 @@
+{
+    "/api": {
+      "target": "https://api.flickr.com/services/rest",
+      "secure": true,
+      "changeOrigin": true,
+      "credentials": false,
+      "pathRewrite": {
+        "^/api": ""
+      }
+    }
+  }

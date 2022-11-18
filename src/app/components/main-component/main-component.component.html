@@ -1,0 +1,9 @@
+<div *ngIf="!catostrophicError; else catostrophie" >
+    <div class="mainWrapper" (click)="setRandomCat()">
+        <h1>Click Me</h1>
+        <app-cat-item [targetCat]="targetCat"></app-cat-item>
+    </div>
+</div>
+<ng-template #catostrophie>
+    <h1>Something bad happend!</h1>
+</ng-template>
